@@ -26,4 +26,16 @@ Authors.
 \newblock Frobnication tutorial, 2014.
 \newblock Supplied as additional material {\tt tr.pdf}.
 
+\bibitem{sun2015learning}
+J.~Sun, W.~Cao, Z.~Xu, and J.~Ponce.
+\newblock Learning a convolutional neural network for non-uniform motion blur
+  removal.
+\newblock In {\em Computer Vision and Pattern Recognition (CVPR), 2015 IEEE
+  Conference on}, pages 769--777. IEEE, 2015.
+
+\bibitem{whyte2012non}
+O.~Whyte, J.~Sivic, A.~Zisserman, and J.~Ponce.
+\newblock Non-uniform deblurring for shaken images.
+\newblock {\em International journal of computer vision}, 98(2):168--186, 2012.
+
 \end{thebibliography}

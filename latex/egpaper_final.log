@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  29 MAY 2016 19:34
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  29 MAY 2016 20:02
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -367,28 +367,33 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 47.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 82.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 72.
  [4321{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ] [4322] [4323]
-(./egpaper_final.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 441.
+Underfull \vbox (badness 2478) has occurred while \output is active []
+
  [4324]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 441.
+(./egpaper_final.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 431.
+ [4325
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 431.
  (./egpaper_final.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 441.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 441.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 441.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 431.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 431.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 431.
  ) 
 Here is how much of TeX's memory you used:
- 6325 strings out of 493315
- 90947 string characters out of 6137904
- 181527 words of memory out of 5000000
- 9645 multiletter control sequences out of 15000+600000
+ 6330 strings out of 493315
+ 91024 string characters out of 6137904
+ 180598 words of memory out of 5000000
+ 9647 multiletter control sequences out of 15000+600000
  35088 words of font info for 82 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 34i,9n,26p,309b,324s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,9n,26p,1275b,383s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texl
@@ -402,10 +407,10 @@ mf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2013/texmf-dist/
 fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type
 1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/time
 s/utmri8a.pfb>
-Output written on egpaper_final.pdf (4 pages, 142290 bytes).
+Output written on egpaper_final.pdf (5 pages, 144840 bytes).
 PDF statistics:
- 126 PDF objects out of 1000 (max. 8388607)
- 106 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 500000)
+ 134 PDF objects out of 1000 (max. 8388607)
+ 113 compressed objects within 2 object streams
+ 34 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

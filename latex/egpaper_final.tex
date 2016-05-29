@@ -45,23 +45,14 @@ Hacettepe University\\
 
 %%%%%%%%% ABSTRACT
 \begin{abstract}
-   The ABSTRACT is to be in fully-justified italicized text, at the top
-   of the left-hand column, below the author and affiliation
-   information. Use the word ``Abstract'' as the title, in 12-point
-   Times, boldface type, centered relative to the column, initially
-   capitalized. The abstract is to be in 10-point, single-spaced type.
-   Leave two blank lines after the Abstract, then begin the main text.
-   Look at previous CVPR abstracts to get a feel for style and length.
+In this paper we evaluate two blind motion-deblurring methods in the recent literature using a non-traditional metric that was developed in order to create a more perceptionally sound deblurring comparison criteria. In general terms, the first method, which was developed by Sun \etal \cite{sun2015learning}, uses a convolutional neural network (CNN) to learn non-uniform motion blur removal. The second method, which was developed by Whyte \etal \cite{whyte2012non}, proposes a geometric model to define the blurring kernels. Both methods tackle with the same blind non-uniform motion blur removal problem. In the upcoming sections we first define the blind motion-deblurring problem, then we discuss the related work focusing mostly on the recent literature, next we describe the two methods along with the no-reference metric, subsequently we define the methodology and experimentation, and we finish with conclusion.
 \end{abstract}
 
 %%%%%%%%% BODY TEXT
 \section{Introduction}
 
-Please follow the steps outlined below when submitting your manuscript to
-the IEEE Computer Society Press.  This style guide now has several
-important modifications (for example, you are no longer warned against the
-use of sticky tape to attach your artwork to the paper), so all authors
-should read this new version.
+Motion blur is caused by moving the camera or objects within view when the camera shutter is open. This harms sharpness and causes losing the edges and thus objects in the scene seem intermingled. If the entire scene was blurred in the same way, this type of blur is called uniform blur. Non-uniform blur arises when the blur does not show the same type or magnitude of intermingling throughout the scene. A typical example of non-uniform blur emerges when the camera is rotated when the camera shutter is open and the recording of the information of the outside world is under way. When this happens the scene gets blurred in a rotational pattern (different parts of the scene blurred depending on the distance to a certain rotational center) [EXAMPLE]. Another example would be moving the camera towards or away from the scene (transposition in the depth axis). In this case the blurring pattern looks more like a tunnel effect; namely blurring happens less in magnitude around a certain center in the scene (like a target), and more and more towards the image boundaries [EXAMPLE]. More complex movements such as a combination of transposition and rotation of the camera complicate the issue even further.
+Deblurring typically have been defined as a 
 
 %-------------------------------------------------------------------------
 \subsection{Language}
