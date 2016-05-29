@@ -52,7 +52,12 @@ In this paper we evaluate two blind motion-deblurring methods in the recent lite
 \section{Introduction}
 
 Motion blur is caused by moving the camera or objects within view when the camera shutter is open. This harms sharpness and causes losing the edges and thus objects in the scene seem intermingled. If the entire scene was blurred in the same way, this type of blur is called uniform blur. Non-uniform blur arises when the blur does not show the same type or magnitude of intermingling throughout the scene. A typical example of non-uniform blur emerges when the camera is rotated when the camera shutter is open and the recording of the information of the outside world is under way. When this happens the scene gets blurred in a rotational pattern (different parts of the scene blurred depending on the distance to a certain rotational center) [EXAMPLE]. Another example would be moving the camera towards or away from the scene (transposition in the depth axis). In this case the blurring pattern looks more like a tunnel effect; namely blurring happens less in magnitude around a certain center in the scene (like a target), and more and more towards the image boundaries [EXAMPLE]. More complex movements such as a combination of transposition and rotation of the camera complicate the issue even further.
-Deblurring typically have been defined as a 
+
+Uniform deblurring typically have been defined as a convolution of an image with a kernel and added noise. Therefore, the basic approach is to subtract the noise and deconvolve the image with the same kernel. The problem with this approach is that the kernel is generally unknown. When the blur kernel is unknown, the problem is called blind deblurring problem. Researchers have attacked this problem with a range of different approaches. Some of the approaches will be covered in the next section.
+
+
+
+
 
 %-------------------------------------------------------------------------
 \subsection{Language}
