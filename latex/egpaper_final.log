@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  29 MAY 2016 21:47
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  29 MAY 2016 22:22
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -366,107 +366,30 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 48.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 49.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 59.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 59.
+ [1{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
-LaTeX Warning: Citation `sun2015learning' on page 4321 undefined on input line 
-49.
-
-
-LaTeX Warning: Citation `whyte2012non' on page 4321 undefined on input line 49.
-
-
-
-LaTeX Warning: Citation `sun2015learning' on page 4321 undefined on input line 
-59.
-
-
-LaTeX Warning: Citation `sun2015learning' on page 4321 undefined on input line 
-61.
-
-
-LaTeX Warning: Citation `sun2015learning' on page 4321 undefined on input line 
-63.
-
-[4321{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-
-
-]
-
-LaTeX Warning: Citation `Authors14' on page 4322 undefined on input line 187.
-
-[4322]
-
-LaTeX Warning: Citation `Authors14b' on page 4323 undefined on input line 199.
-
-
-LaTeX Warning: Citation `Alpher02' on page 4323 undefined on input line 271.
-
-
-LaTeX Warning: Citation `Alpher03' on page 4323 undefined on input line 272.
-
-
-LaTeX Warning: Citation `Alpher04' on page 4323 undefined on input line 272.
-
-
-LaTeX Warning: Citation `Alpher03' on page 4323 undefined on input line 274.
-
-
-LaTeX Warning: Citation `Alpher03' on page 4323 undefined on input line 275.
-
-
-LaTeX Warning: Citation `Alpher03' on page 4323 undefined on input line 280.
-
-
-LaTeX Warning: Citation `Alpher02' on page 4323 undefined on input line 280.
-
-
-LaTeX Warning: Citation `Authors14' on page 4323 undefined on input line 280.
-
-
-LaTeX Warning: Citation `Alpher02' on page 4323 undefined on input line 281.
-
-
-LaTeX Warning: Citation `Alpher03' on page 4323 undefined on input line 281.
-
-
-LaTeX Warning: Citation `Authors14' on page 4323 undefined on input line 281.
-
-[4323]
-
-LaTeX Warning: Reference `fig:onecol' on page 4324 undefined on input line 356.
-
-
-
-LaTeX Warning: Reference `fig:short' on page 4324 undefined on input line 356.
-
-
-LaTeX Warning: Citation `Authors14' on page 4324 undefined on input line 391.
-
-[4324] (./egpaper_final.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 450.
- [4325]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 450.
+] [2] [3] [4]
+(./egpaper_final.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 456.
+ [5]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 456.
  (./egpaper_final.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 450.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 450.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 450.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 456.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 456.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 456.
  ) 
 Here is how much of TeX's memory you used:
- 6330 strings out of 493315
- 91024 string characters out of 6137904
- 180877 words of memory out of 5000000
- 9647 multiletter control sequences out of 15000+600000
- 35088 words of font info for 82 fonts, out of 8000000 for 9000
+ 6336 strings out of 493315
+ 91082 string characters out of 6137904
+ 182589 words of memory out of 5000000
+ 9649 multiletter control sequences out of 15000+600000
+ 36717 words of font info for 84 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 34i,9n,26p,1228b,337s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,9n,26p,1228b,324s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texl
@@ -478,12 +401,13 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2013/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2013/tex
 mf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2013/texmf-dist/
 fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type
-1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/time
-s/utmri8a.pfb>
-Output written on egpaper_final.pdf (5 pages, 146257 bytes).
+1/urw/times/utmbi8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/tim
+es/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmri8a
+.pfb>
+Output written on egpaper_final.pdf (5 pages, 154571 bytes).
 PDF statistics:
- 115 PDF objects out of 1000 (max. 8388607)
- 95 compressed objects within 1 object stream
- 34 named destinations out of 1000 (max. 500000)
+ 145 PDF objects out of 1000 (max. 8388607)
+ 123 compressed objects within 2 object streams
+ 36 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

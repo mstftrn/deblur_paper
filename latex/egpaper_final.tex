@@ -22,7 +22,7 @@
 
 % Pages are numbered in submission mode, and unnumbered in camera-ready
 %\ifcvprfinal\pagestyle{empty}\fi
-\setcounter{page}{4321}
+\setcounter{page}{1}
 \begin{document}
 
 %%%%%%%%% TITLE
@@ -56,6 +56,8 @@ Motion blur is caused by moving the camera or objects within view when the camer
 
 Uniform deblurring typically have been defined as a convolution of an image with a kernel and added noise. Therefore, the basic approach is to subtract the noise and deconvolve the image with the same kernel. The problem with this approach is that the kernel is generally unknown. When the blur kernel is unknown, the problem is called blind deblurring problem. Researchers have attacked this problem with a range of different approaches. Some of the approaches will be covered in the next section. In this paper we analyze two of the recent papers that tackle with blind motion-deblurring problem.
 
+\subsection{Sun \textbf{\etal} (2015)}
+
 In Sun \etal (2015), the authors attack the problem of removing non-uniform motion blur from a single image using deep learning. The method they use depends on predicting motion kernels at a patch level. In order to do this they formulate the non-uniform blur as a field throughout the image. To find this field they divide the image into overlapping $30 \times 30$ patches, estimate the kernels at this level and then smooth the field depending on a smoothness of motion assumption. CNN is used to learn deblurring at a patch level. The general view of the CNN is seen on (Figure) \cite{sun2015learning}.
 
 Before training, the authors generated motion blur kernels with varying sizes from 1 pixel to 25 pixels with interval of two, and orientations ranging from 0 degree to 150 degree with intervals of 30, totaling 73 kernels. These kernels can be seen in (figure). To train the CNN model, the authors used these 73 kernels to artificially generate 1.4 million blurred patch/kernel pairs using PASCAL VOC 2010 database. They then used these patches as the input to the CNN during the training phase \cite{sun2015learning}.
@@ -64,7 +66,9 @@ As can be seen in (figure) the CNN finds a probability distribution at the softm
 
 The next phase is using the Markov Random Field (MRF) to find a dense field of kernels on the image. The previous phases find a number of motion kernels at every patch location on the image. Here, the main assumption is that the camera moves in a smooth trajactory when the shutter is open and thus the change of kernels throughout the image must also be smooth. This implies that there mut not be sudden changes when moving from one patch to another. This is made possible by using an MRF model and optimizing it. This enforces closeness of nearby kernels \cite{sun2015learning}.
 
+\subsection{Whyte \textbf{\etal} (2012)}
 
+In Whyte \etal (2012), the authors emphasize that during the exposure, the camera sees a sequence of interrelated views and integrate them to form the blurry image. If we take one sensor pixel in the camera into consideration, it is subjected to photons coming from different points in space when the camera moves. It is also possible that nearby pixels are seeing the same points with passing time and recording the light coming from the same points. Therefore, they observe that the views of the camera are all related and they state that this relation can be explained using geometry \cite{whyte2012non}.
 
 
 
