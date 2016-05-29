@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  29 MAY 2016 21:28
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  29 MAY 2016 21:47
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -156,6 +156,10 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
@@ -235,11 +239,6 @@ Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks OFF on input line 4694.
 \c@Hy@tempcnt=\count108
-
-(/usr/local/texlive/2013/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip11
-Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
-)
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen120
 \Fld@menulength=\count109
@@ -276,21 +275,21 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 (./egpaper_final.aux)
 \openout1 = `egpaper_final.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 26.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
@@ -334,7 +333,7 @@ e
 ))
 \AtBeginShipoutBox=\box31
 Package atbegshi Info: Package `everyshi' patched.
-Package hyperref Info: Link coloring OFF on input line 25.
+Package hyperref Info: Link coloring OFF on input line 26.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -344,48 +343,126 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count121
 )
-LaTeX Info: Redefining \ref on input line 25.
-LaTeX Info: Redefining \pageref on input line 25.
-LaTeX Info: Redefining \nameref on input line 25.
+LaTeX Info: Redefining \ref on input line 26.
+LaTeX Info: Redefining \pageref on input line 26.
+LaTeX Info: Redefining \nameref on input line 26.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 45.
-LaTeX Font Info:    Try loading font information for U+msa on input line 45.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 46.
+LaTeX Font Info:    Try loading font information for U+msa on input line 46.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 45.
+LaTeX Font Info:    Try loading font information for U+msb on input line 46.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 45.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 46.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 47.
- [4321{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 48.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 49.
+
+
+LaTeX Warning: Citation `sun2015learning' on page 4321 undefined on input line 
+49.
+
+
+LaTeX Warning: Citation `whyte2012non' on page 4321 undefined on input line 49.
+
+
+
+LaTeX Warning: Citation `sun2015learning' on page 4321 undefined on input line 
+59.
+
+
+LaTeX Warning: Citation `sun2015learning' on page 4321 undefined on input line 
+61.
+
+
+LaTeX Warning: Citation `sun2015learning' on page 4321 undefined on input line 
+63.
+
+[4321{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 86.
- [4322] [4323]
+
+LaTeX Warning: Citation `Authors14' on page 4322 undefined on input line 187.
+
+[4322]
+
+LaTeX Warning: Citation `Authors14b' on page 4323 undefined on input line 199.
+
+
+LaTeX Warning: Citation `Alpher02' on page 4323 undefined on input line 271.
+
+
+LaTeX Warning: Citation `Alpher03' on page 4323 undefined on input line 272.
+
+
+LaTeX Warning: Citation `Alpher04' on page 4323 undefined on input line 272.
+
+
+LaTeX Warning: Citation `Alpher03' on page 4323 undefined on input line 274.
+
+
+LaTeX Warning: Citation `Alpher03' on page 4323 undefined on input line 275.
+
+
+LaTeX Warning: Citation `Alpher03' on page 4323 undefined on input line 280.
+
+
+LaTeX Warning: Citation `Alpher02' on page 4323 undefined on input line 280.
+
+
+LaTeX Warning: Citation `Authors14' on page 4323 undefined on input line 280.
+
+
+LaTeX Warning: Citation `Alpher02' on page 4323 undefined on input line 281.
+
+
+LaTeX Warning: Citation `Alpher03' on page 4323 undefined on input line 281.
+
+
+LaTeX Warning: Citation `Authors14' on page 4323 undefined on input line 281.
+
+[4323]
+
+LaTeX Warning: Reference `fig:onecol' on page 4324 undefined on input line 356.
+
+
+
+LaTeX Warning: Reference `fig:short' on page 4324 undefined on input line 356.
+
+
+LaTeX Warning: Citation `Authors14' on page 4324 undefined on input line 391.
+
 [4324] (./egpaper_final.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 445.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 450.
  [4325]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 445.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 450.
  (./egpaper_final.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 445.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 445.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 445.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 450.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 450.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 450.
  ) 
 Here is how much of TeX's memory you used:
  6330 strings out of 493315
  91024 string characters out of 6137904
- 180598 words of memory out of 5000000
+ 180877 words of memory out of 5000000
  9647 multiletter control sequences out of 15000+600000
  35088 words of font info for 82 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -403,10 +480,10 @@ mf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2013/texmf-dist/
 fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type
 1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/time
 s/utmri8a.pfb>
-Output written on egpaper_final.pdf (5 pages, 146766 bytes).
+Output written on egpaper_final.pdf (5 pages, 146257 bytes).
 PDF statistics:
- 137 PDF objects out of 1000 (max. 8388607)
- 116 compressed objects within 2 object streams
+ 115 PDF objects out of 1000 (max. 8388607)
+ 95 compressed objects within 1 object stream
  34 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
