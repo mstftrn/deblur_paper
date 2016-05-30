@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}\itemsep=-1pt
+\begin{thebibliography}{10}\itemsep=-1pt
 
 \bibitem{Alpher02}
 A.~Alpher.
@@ -26,11 +26,29 @@ Authors.
 \newblock Frobnication tutorial, 2014.
 \newblock Supplied as additional material {\tt tr.pdf}.
 
+\bibitem{cho2007removing}
+S.~Cho, Y.~Matsushita, and S.~Lee.
+\newblock Removing non-uniform motion blur from images.
+\newblock In {\em Computer Vision, 2007. ICCV 2007. IEEE 11th International
+  Conference on}, pages 1--8. IEEE, 2007.
+
+\bibitem{levin2006blind}
+A.~Levin.
+\newblock Blind motion deblurring using image statistics.
+\newblock In {\em Advances in Neural Information Processing Systems}, pages
+  841--848, 2006.
+
 \bibitem{liu2013no}
 Y.~Liu, J.~Wang, S.~Cho, A.~Finkelstein, and S.~Rusinkiewicz.
 \newblock A no-reference metric for evaluating the quality of motion
   deblurring.
 \newblock {\em ACM Trans. Graph.}, 32(6):175--1, 2013.
+
+\bibitem{shan2008high}
+Q.~Shan, J.~Jia, and A.~Agarwala.
+\newblock High-quality motion deblurring from a single image.
+\newblock In {\em ACM Transactions on Graphics (TOG)}, volume~27, page~73. ACM,
+  2008.
 
 \bibitem{sun2015learning}
 J.~Sun, W.~Cao, Z.~Xu, and J.~Ponce.
