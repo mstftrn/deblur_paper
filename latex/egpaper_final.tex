@@ -7,6 +7,9 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{url}
+\usepackage{subcaption}
+\usepackage{wrapfig}
+
 
 % Include other packages here, before hyperref.
 
@@ -80,7 +83,9 @@ The authors create a geometrical model using the geometry of a camera. They form
 
 Non-uniform blur removal problem has been studied extensively. Many pieces of previous research has considered the problem as a subset of uniform blur in a patch scale. In other words, these studies assumed that images that have non-uniform blur are much like uniformly blurred images in a smaller scale. Levin (2006) handled the problem of non-uniform blurring when some of the objects in the scene are moving independently. They divide the image into segments and find kernels using image statistics  \cite{levin2006blind}. Cho \etal (2007) handles the problem of blind deblurring when the objects and the camera moving at the same time. They formulate the problem using an energy function and solve it \cite{cho2007removing}. 
 
-Some other methods that did not handle blind deblurring as a uniform deblurring in a segment scale have been proposed. Shan \etal (2008) estimates blur kernel and deblurred image at the same time using a probabilistic model. They analyze the common artifacts of deblurring and they constrain some of the image features in order to get rid of these artifacts \cite{shan2008high}. Tai \etal (2010) reduces the ``spatially varying'' blur using a hybrid camera system. This camera system has an extra camera that captures at a higher frame rate but at a lower resolution. They combine the two streams in order to reduce the non-uniform blur in video streams and in images \cite{tai2010correction}. Similarly, Joshi \etal (2010) uses inertial measurement sensors to measure six degrees of freedom motion to approximate the blur kernels \cite{joshi2010image}. Gupta \etal (2010) approximates the six degrees of freedom motion using ``in-plane translation and rotation'' similar to Whyte \etal (2012). They represent camera motion as a Motion Density Function \cite{gupta2010single}.
+Some other methods that did not handle blind deblurring as a uniform deblurring in a segment scale have been proposed. Shan \etal (2008) estimates blur kernel and deblurred image at the same time using a probabilistic model. They analyze the common artifacts of deblurring and they constrain some of the image features in order to get rid of these artifacts \cite{shan2008high}. Tai \etal (2010) reduces the ``spatially varying'' blur using a hybrid camera system. This camera system has an extra camera that captures at a higher frame rate but at a lower resolution. They combine the two streams in order to reduce the non-uniform blur in video streams and in images \cite{tai2010correction}. Similarly, Joshi \etal (2010) uses inertial measurement sensors to measure six degrees of freedom motion to approximate the blur kernels \cite{joshi2010image}. Gupta \etal (2010) approximates the six degrees of freedom motion using ``in-plane translation and rotation'' similar to Whyte \etal (2012). They represent camera motion as a Motion Density Function. The algorithm in this paper first come up with a kernel and successively updates the image and the kernel in each step \cite{gupta2010single}.
+
+
 
  
 
@@ -103,14 +108,56 @@ The researchers used crowdsourcing to perceptually assign deblurring quality to 
 
 \section{Experimental Results}
 
+In this section we share some of the results of our experiments with the reader. 
+
+\subsection{Visual Results}
+
+In figure~\ref{fig:image2} blurry image and the deblurring results of Sun \etal (2015) and Whyte \etal (2012) can be seen.
+
+
+
+%\begin{wrapfigure}{l}{0.25\textwidth}
+%\includegraphics[width=1\linewidth]{book_deblurred} 
+%\caption{Caption1}
+%\label{fig:subim1}
+%\end{wrapfigure}
+
+
+
 
 \begin{figure*}
 \begin{center}
 \graphicspath{ {deblursun/} }
-\includegraphics[width=50mm]{book_deblurred}
-\caption{A caption}
+\begin{subfigure}{0.32\textwidth}
+
+\includegraphics[width=0.9\linewidth]{book_s01_it0000_blurry} 
+\caption{Blurry book image}
+\label{fig:subim1}
+\end{subfigure}
+\begin{subfigure}{0.33\textwidth}
+\includegraphics[width=0.9\linewidth]{book_deblurred}
+\caption{Sun \etal (2015) result}
+\label{fig:subim2}
+\end{subfigure}
+\begin{subfigure}{0.33\textwidth}
+\graphicspath{ {deblurwhyte/} }
+\includegraphics[width=0.9\linewidth]{book_whyte}
+\caption{Whyte \etal (2012) result}
+\label{fig:subim3}
+\end{subfigure}
+ 
+\caption{Blurry book image and deblurring results of the two algorithms}
+\label{fig:image2}
 \end{center}
 \end{figure*}
+
+%\begin{figure*}
+%\begin{center}
+%\graphicspath{ {deblursun/} }
+%\includegraphics[width=0.4\linewidth]{book_deblurred}
+%\caption{A caption}
+%\end{center}
+%\end{figure*}
 
 
 \section{Conclusions}
@@ -118,14 +165,6 @@ In this study, we analyzed and evaluated two of the deblurring studies in the cu
 
 
 %-------------------------------------------------------------------------
-\subsection{Language}
-
-All manuscripts must be in English.
-
-\subsection{Dual submission}
-
-Please refer to the author guidelines on the CVPR 2016 web page for a
-discussion of the policy on dual submissions.
 
 \subsection{Paper length}
 Papers, excluding the references section,
@@ -135,15 +174,6 @@ length of the references section. For example, a paper of eight pages
 with two pages of references would have a total length of 10 pages.
 {\bf There will be no extra page charges for
   CVPR 2016.}
-
-Overlength papers will simply not be reviewed.  This includes papers
-where the margins and formatting are deemed to have been significantly
-altered from those laid down by this style guide.  Note that this
-\LaTeX\ guide already sets figure captions and references in a smaller font.
-The reason such papers will not be reviewed is that there is no provision for
-supervised revisions of manuscripts.  The reviewing process cannot determine
-the suitability of the paper for presentation in eight pages if it is
-reviewed in eleven.  
 
 %-------------------------------------------------------------------------
 \subsection{The ruler}
