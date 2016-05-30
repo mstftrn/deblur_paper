@@ -68,7 +68,7 @@ The next phase is using the Markov Random Field (MRF) to find a dense field of k
 
 \subsection{Whyte \textbf{\etal} (2012)}
 
-In Whyte \etal (2012), the authors emphasize that during the exposure, the camera sees a sequence of interrelated views and integrate them to form the blurry image. If we take one sensor pixel in the camera into consideration, it is subjected to photons coming from different points in space when the camera moves. It is also possible that nearby pixels are seeing the same points with passing time and recording the light coming from the same points. Therefore, they observe that the views of the camera are all related and they state that this relation can be explained using geometry \cite{whyte2012non}.
+In Whyte \etal (2012), the authors emphasize that during the exposure, the camera sees a sequence of interrelated views and integrate them to form the blurry image. If we take one sensor pixel in the camera into consideration, it is subjected to photons coming from different points in space when the camera moves. It is also possible that nearby pixels are seeing the same points with passing time and recording the light coming from the same points. Therefore, they make an observation that the views of the camera are all related and they state that this relation can be explained using geometry \cite{whyte2012non}.
 
 
 
@@ -84,9 +84,14 @@ One of the reasons why we decided on to analyze these two studies was the availa
 
 Sun \etal (2015) code is available Dr. Sun's website \footnote{\url{http://gr.xjtu.edu.cn/}}. Whyte \etal (2012) code is available at the study's website \footnote{\url{http://www.di.ens.fr/willow/research/deblurring/}}.
 
-In conducting the experiments, we used five blurry images that was provided with \cite{whyte2012non}. These blurry images are available on the study's website \footnote{\url{http://gr.xjtu.edu.cn/web/jiansun/codes}}. These pictures pose very challanging deblurring problems. The movements show quite complex patterns throughout the images.
+In conducting the experiments, we used five blurry images that was provided with \cite{whyte2012non}. These blurry images are available on the study's website \footnote{\url{http://gr.xjtu.edu.cn/web/jiansun/codes}}. These pictures pose very challanging deblurring problems. The movements show quite complex patterns throughout the images and the images amount of intermingling among nearby pixels is quite high.
+
+In this study, we use Liu \etal (2013)`s no-reference metric to measure the success of the two deblurring methods. In the following section no-reference metric is explained.
 
 \subsection{Liu \textbf{\etal} (2013)}
+The main goal this study tries to achieve is finding a good metric to measure specifically quality of deblurring. The authors argue that a metric specific to this problem will yield better results than more general metrics that measure the quality of the solutions to other types of image processing problems such as denoising etc. To this end, they measure the principal artifacts related to deblurring in general, i.e. ringing artifacts, noise, and residual blur and use these as features to learn a metric for blind deblurring.
+
+This metric used crowdsourcing to perceptually assign deblurring quality to image patches. The users were shown image pairs and they decided which has a better deblurring quality. The researchers used this quality information to rank different images that were deblurred using different algorithms and parameters. They decided on which artifacts are most important in the process of deciding on the quality of deblurring and which features are more important to use when giving a score to a deblurring result.
 
 \section{Experimental Results}
 

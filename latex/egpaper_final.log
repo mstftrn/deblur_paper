@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  30 MAY 2016 05:17
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  30 MAY 2016 14:27
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -377,16 +377,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 85--85
 [][][][]$\OT1/pcr/m/n/8 http : / / www . di . ens . fr / willow / research /
  []
 
-[2] [3] [4] (./egpaper_final.bbl [5])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 471.
+[2] [3] [4]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5]
+(./egpaper_final.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 476.
  [6
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 471.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 476.
  (./egpaper_final.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 471.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 471.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 471.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 476.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 476.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 476.
  ) 
 Here is how much of TeX's memory you used:
  6347 strings out of 493315
@@ -395,7 +399,7 @@ Here is how much of TeX's memory you used:
  9650 multiletter control sequences out of 15000+600000
  37232 words of font info for 86 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 34i,9n,26p,1228b,468s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,9n,26p,1228b,397s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texl
@@ -410,7 +414,7 @@ fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type
 1/urw/times/utmbi8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/tim
 es/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmri8a
 .pfb>
-Output written on egpaper_final.pdf (6 pages, 156531 bytes).
+Output written on egpaper_final.pdf (6 pages, 157862 bytes).
 PDF statistics:
  169 PDF objects out of 1000 (max. 8388607)
  146 compressed objects within 2 object streams
