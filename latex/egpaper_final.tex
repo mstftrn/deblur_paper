@@ -70,7 +70,7 @@ The next phase is using the Markov Random Field (MRF) to find a dense field of k
 
 In Whyte \etal (2012), the authors emphasize that during the exposure, the camera sees a sequence of interrelated views and integrate them to form the blurry image. If we take one sensor pixel in the camera into consideration, it is subjected to photons coming from different points in space when the camera moves. It is also possible that nearby pixels are seeing the same points with passing time and recording the light coming from the same points. Therefore, they make an observation that the views of the camera are all related and they state that this relation can be explained using geometry \cite{whyte2012non}.
 
-
+The authors create a geometrical model using the geometry of a camera. They formulate how the translation and rotational movements of the camera can be expressed in terms of homographies, or in other words projective transformations in 2D \cite{whyte2012non}. 
 
 
 
@@ -89,9 +89,9 @@ In conducting the experiments, we used five blurry images that was provided with
 In this study, we use Liu \etal (2013)`s no-reference metric to measure the success of the two deblurring methods. In the following section no-reference metric is explained.
 
 \subsection{Liu \textbf{\etal} (2013)}
-The main goal this study tries to achieve is finding a good metric to measure specifically quality of deblurring. The authors argue that a metric specific to this problem will yield better results than more general metrics that measure the quality of the solutions to other types of image processing problems such as denoising etc. To this end, they measure the principal artifacts related to deblurring in general, i.e. ringing artifacts, noise, and residual blur and use these as features to learn a metric for blind deblurring.
+The main goal this study tries to achieve is finding a good metric to measure specifically quality of deblurring. The authors argue that a metric specific to this problem will yield better results than more general metrics that measure the quality of the solutions to other types of image processing problems such as denoising etc. To this end, they measure the principal artifacts related to deblurring in general, i.e. ringing artifacts, noise, and residual blur and use these as features to learn a metric for blind deblurring \cite{liu2013no}.
 
-This metric used crowdsourcing to perceptually assign deblurring quality to image patches. The users were shown image pairs and they decided which has a better deblurring quality. The researchers used this quality information to rank different images that were deblurred using different algorithms and parameters. They decided on which artifacts are most important in the process of deciding on the quality of deblurring and which features are more important to use when giving a score to a deblurring result.
+This metric used crowdsourcing to perceptually assign deblurring quality to image patches. The users were shown image pairs and they decided which has a better deblurring quality. The researchers used this quality information to rank different images that were deblurred using different algorithms and parameters. They decided on which artifacts are most important in the process of deciding on the quality of deblurring and which features are more important to use when giving a score to a deblurring result \cite{liu2013no}.
 
 \section{Experimental Results}
 
