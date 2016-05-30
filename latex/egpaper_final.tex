@@ -112,7 +112,9 @@ In this section we share some of the results of our experiments with the reader.
 
 \subsection{Visual Results}
 
-In figure~\ref{fig:image2} blurry image and the deblurring results of Sun \etal (2015) and Whyte \etal (2012) can be seen.
+In figure~\ref{fig:image1} blurry image and the deblurring results of Sun \etal (2015) and Whyte \etal (2012) can be seen. Obviously, Whyte \etal (2012) approach gives a better result although some ringing artifacts are present.
+
+The blur kernels associated with these two deblurring results are shown in figure~\ref{fig:image2}. Note that Sun \etal (2015) approach could not find a good approximation to a set of kernels that depict smooth motion.
 
 
 
@@ -147,6 +149,27 @@ In figure~\ref{fig:image2} blurry image and the deblurring results of Sun \etal 
 \end{subfigure}
  
 \caption{Blurry book image and deblurring results of the two algorithms}
+\label{fig:image1}
+\end{center}
+\end{figure*}
+
+\begin{figure*}
+\begin{center}
+\graphicspath{ {deblursun/} }
+\begin{subfigure}{0.33\textwidth}
+
+\includegraphics[width=0.9\linewidth]{book_kernels} 
+\caption{Sun \etal (2015) kernels}
+\label{fig:subim1}
+\end{subfigure}
+\begin{subfigure}{0.58\textwidth}
+\graphicspath{ {deblurwhyte/} }
+\includegraphics[width=0.9\linewidth]{book_kernel}
+\caption{Whyte \etal (2012) 3D kernel}
+\label{fig:subim3}
+\end{subfigure}
+ 
+\caption{Blur kernels associated with the two algorithms. Note that the Whyte \etal (2012) kernel is a 3D kernel and the Sun \etal (2015) set of kernels are 2D ones. This is the main difference Whyte \etal (2012) differs from the rest of the algorithms. Whyte \etal (2012)'s approach seems to be a better fit where the movement is more complex and cannot be expressed with simple movements as in Sun \etal (2015).}
 \label{fig:image2}
 \end{center}
 \end{figure*}
