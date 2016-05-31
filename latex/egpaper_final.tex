@@ -9,6 +9,8 @@
 \usepackage{url}
 \usepackage{subcaption}
 \usepackage{wrapfig}
+\usepackage{pdfpages}
+
 
 
 % Include other packages here, before hyperref.
@@ -61,26 +63,39 @@ Uniform deblurring typically have been defined as convolution of an image with a
 
 \subsection{Sun \textbf{\etal} (2015)}
 
-In Sun \etal (2015), the authors attack the problem of removing non-uniform motion blur from a single image using deep learning. The method they use depends on predicting motion kernels at a patch level. In order to do this they formulate the non-uniform blur as a field throughout the image. To find this field they divide the image into overlapping $30 \times 30$ patches, estimate the kernels at this level and then smooth the field depending on a smoothness of motion assumption. CNN is used to learn deblurring at a patch level. The general view of the CNN is seen on (Figure) \cite{sun2015learning}.
+In Sun \etal (2015), the authors attack the problem of removing non-uniform motion blur from a single image using deep learning. The method they use depends on predicting motion kernels at a patch level. In order to do this they formulate the non-uniform blur as a field throughout the image. To find this field they divide the image into overlapping $30 \times 30$ patches, estimate the kernels at this level and then smooth the field depending on a smoothness of motion assumption. CNN is used to learn deblurring at a patch level. The general view of the CNN is seen on figure~\ref{fig:figureCNN} \cite{sun2015learning}.
 
-Before training, the authors generated motion blur kernels with varying sizes from 1 pixel to 25 pixels with interval of two, and orientations ranging from 0 degree to 150 degree with intervals of 30, totaling 73 kernels. These kernels can be seen in (figure). To train the CNN model, the authors used these 73 kernels to artificially generate 1.4 million blurred patch/kernel pairs using PASCAL VOC 2010 database. They then used these patches as the input to the CNN during the training phase \cite{sun2015learning}.
+\begin{figure*} [t]
+\begin{center}
+\includegraphics[width=1\linewidth]{CNN.pdf}
+\caption{Convolutional neural network}
+\label{fig:figureCNN}
+\end{center}
+\end{figure*}
 
-As can be seen in (figure) the CNN finds a probability distribution at the softmax layer. The authors state that the kernel space, which consists of 73 kernels, is not dense enough to represent all types of motions. To overcome this problem, they extend the motion kernel set by rotating image patches in the range between 0 and 24 degrees and use the trained CNN on these patches. Note that at this point they do not retrain the CNN, but rather they use the trained CNN with rotated images. By doing this they overcome the trainability problem of a high number of motion kernels and get a good amount of motion orientation detail \cite{sun2015learning}.
+Before training, the authors generated motion blur kernels with varying sizes from 1 pixel to 25 pixels with interval of two, and orientations ranging from 0 degree to 150 degree with intervals of 30, totaling 73 kernels. These kernels can be seen in figure~\ref{fig:figurekernels}. To train the CNN model, the authors used these 73 kernels to artificially generate 1.4 million blurred patch/kernel pairs using PASCAL VOC 2010 database. They then used these patches as the input to the CNN during the training phase \cite{sun2015learning}.
 
-The next phase is using the Markov Random Field (MRF) to find a dense field of kernels on the image. The previous phases find a number of motion kernels at every patch location on the image. Here, the main assumption is that the camera moves in a smooth trajactory when the shutter is open and thus the change of kernels throughout the image must also be smooth. This implies that there mut not be sudden changes when moving from one patch to another. This is made possible by using an MRF model and optimizing it. This enforces closeness of nearby kernels \cite{sun2015learning}.
+\begin{figure} [t]
+\begin{center}
+\includegraphics[width=0.9\linewidth]{kernels.pdf}
+\caption{Convolutional neural network training kernels}
+\label{fig:figurekernels}
+\end{center}
+\end{figure}
+
+As can be seen in figure~\ref{fig:figureCNN} the CNN finds a probability distribution at the softmax layer. The authors state that the kernel space, which consists of 73 kernels, is not dense enough to represent all types of motions. To overcome this problem, they extend the motion kernel set by rotating image patches in the range between 0 and 24 degrees and use the trained CNN on these patches. Note that at this point they do not retrain the CNN, but rather they use the trained CNN with rotated images. By doing this they overcome the trainability problem of a high number of motion kernels and get a good amount of motion orientation detail \cite{sun2015learning}.
+
+The next phase is using the Markov Random Field (MRF) to find a dense field of kernels on the image. The previous phases find a number of motion kernels at every patch location on the image. Here, the main assumption is that the camera moves in a smooth trajectory when the shutter is open and thus the change of kernels throughout the image must also be smooth. This implies that there must not be sudden changes when moving from one patch to another. This is made possible by using an MRF model and optimizing it. This enforces closeness of nearby kernels \cite{sun2015learning}.
 
 \subsection{Whyte \textbf{\etal} (2012)}
 
 In Whyte \etal (2012), the authors emphasize that during the exposure, the camera sees a sequence of interrelated views and integrate them to form the blurry image. If we take one sensor pixel in the camera into consideration, it is subjected to photons coming from different points in space when the camera moves. It is also possible that nearby pixels are seeing the same points with passing time and recording the light coming from the same points. Therefore, they make an observation that the views of the camera are all related and they state that this relation can be explained using geometry \cite{whyte2012non}.
 
-The authors create a geometrical model using the geometry of a camera. They formulate how the translation and rotational movements of the camera can be expressed in terms of homographies, or in other words ``projective transformations in 2D'' \cite{whyte2012non}. They fix the origin of the coordinate axes as the camera's optical center. The define the blurry image as an interal of the images during the exposure time. They then go on to express this integral in terms of angles instead of time \cite{whyte2012non}. 
+The authors create a geometrical model using the geometry of a camera. They formulate how the translation and rotational movements of the camera can be expressed in terms of homographies, or in other words ``projective transformations in 2D'' \cite{whyte2012non}. They fix the origin of the coordinate axes as the camera's optical center. The define the blurry image as an integral of the images during the exposure time. They then go on to express this integral in terms of angles instead of time \cite{whyte2012non}. 
 
 In order to find these homographies, they need to find the so-called calibration matrix of the camera. This depends on the physical properties of the camera. The study uses EXIF tags of an image to populate these variables depending on the brand and model of the camera. When there is no EXIF tag available, the user might manually set these variables or these variables might be guessed depending on the other properties of the image \cite{whyte2012non}.
 
 There is not a single best algorithm the paper proposes but instead they plug the geometrical model into the well-established algorithms in the recent history. We use the Cho and Lee (2009) algorithm that depends on the image derivatives and Gaussian priors \cite{cho2009fast}. This is because, this code is readily available and expected to run faster than the alternatives.
-
-
-
 
 
 \section{Related Work}
@@ -88,18 +103,17 @@ There is not a single best algorithm the paper proposes but instead they plug th
 Non-uniform blur removal problem has been studied extensively. Many pieces of previous research has considered the problem as a subset of uniform blur in a patch scale. In other words, these studies assumed that images that have non-uniform blur are much like uniformly blurred images in a smaller scale. Levin (2006) handled the problem of non-uniform blurring when some of the objects in the scene are moving independently. They divide the image into segments and find kernels using image statistics  \cite{levin2006blind}. Cho \etal (2007) handles the problem of blind deblurring when the objects and the camera moving at the same time. They formulate the problem using an energy function and solve it \cite{cho2007removing}. 
 
 Some other methods that did not handle blind deblurring as a uniform deblurring in a segment scale have been proposed. Shan \etal (2008) estimates blur kernel and deblurred image at the same time using a probabilistic model. They analyze the common artifacts of deblurring and they constrain some of the image features in order to get rid of these artifacts \cite{shan2008high}. Tai \etal (2010) reduces the ``spatially varying'' blur using a hybrid camera system. This camera system has an extra camera that captures at a higher frame rate but at a lower resolution. They combine the two streams in order to reduce the non-uniform blur in video streams and in images \cite{tai2010correction}. Similarly, Joshi \etal (2010) uses inertial measurement sensors to measure six degrees of freedom motion to approximate the blur kernels \cite{joshi2010image}. Gupta \etal (2010) approximates the six degrees of freedom motion using ``in-plane translation and rotation'' similar to Whyte \etal (2012). They represent camera motion as a Motion Density Function. The algorithm in this paper first come up with a kernel and successively updates the image and the kernel in each step \cite{gupta2010single}.
-
-
-
  
 
-\section{Methodology}
+\section{Methodology/Approach}
 
 One of the reasons why we decided on to analyze these two studies was the availability of the codes and data related to the studies. We have got in contact with some other researchers about their papers and queried whether the codes and related material were available, but we have not been able to get the sufficient material to conduct the experiments.
 
 Sun \etal (2015) code is available Dr. Sun's website \footnote{\url{http://gr.xjtu.edu.cn/}}. Whyte \etal (2012) code is available at the study's website \footnote{\url{http://www.di.ens.fr/willow/research/deblurring/}}.
 
-In conducting the experiments, we used five blurry images that was provided with \cite{whyte2012non}. These blurry images are available on the study's website \footnote{\url{http://gr.xjtu.edu.cn/web/jiansun/codes}}. These pictures pose very challanging deblurring problems. The movements and the other features of the images show quite complex patterns and the amount of intermingling among nearby pixels is quite high.
+In conducting the experiments, we used five blurry images that was provided with \cite{whyte2012non}. These blurry images are available on the study's website \footnote{\url{http://gr.xjtu.edu.cn/web/jiansun/codes}}. These pictures pose very challenging deblurring problems. The movements and the other features of the images show quite complex patterns and the amount of intermingling among nearby pixels is quite high.
+
+We simply ran the the two pieces of code that were provided with the two studies we study and measured the quality of deblurring using the no-reference metric we are going to cover and a more traditional metric, PSNR.
 
 In this study, we use Liu \etal (2013)`s no-reference metric to measure the success of the two deblurring methods along with PSNR. We will describe the no-reference metric briefly in the next section.
 
@@ -110,7 +124,7 @@ The researchers used crowdsourcing to perceptually assign deblurring quality to 
 
 \section{Experimental Results}
 
-In this section we share some of the results of our experiments with the reader. 
+In this section we share some of the results of our experiments. The main limitation is the number of images that were used in the evaluation. We think that more images with various types of blur would give a better understanding when evaluating these studies. One of the main constraining factors was the time length of the experiments. Each deblurring task took around thousand seconds and this made the experimentation slower and harder. We could not conduct every single experiment we planned in the first place. In the upcoming sections we discuss the visual and quantitative results of the experiments.
 
 \subsection{Visual Results}
 
@@ -154,7 +168,7 @@ book &	42.7525 &	33.2875 \\
     \caption{PSNR metric measurements of the deblurring results of the two studies}
 \end{table}
 
-We measured the results of the experiments with two metrics. As we discussed earlier, the first metric we used is Liu \etal (2013)'s no-reference deblurring metric. The other metric is peak signal-to-noise ratio. In table 1 and table 2 we see a comparison of the two studies and their deblurring result scores for our five-image dataset. The correlation of the scores of two studies across no-reference metric and PSNR are positive and around 0.56 and 0.66, respectively. However, the correlation of the two metrics across studies are negative for Sun \etal (2015), and positive for Whyte \etal(2012). This is an interesting result and may be a sign that PSNR and no-reference metric are not behaving in the same way. We think that the PSNR metric might behave the opposite way because it is not meant to look at the same artifacts with the more deblurring-specific metric. 
+We measured the results of the experiments with two metrics. As we discussed earlier, the first metric we used is Liu \etal (2013)'s no-reference deblurring metric. The other metric is peak signal-to-noise ratio. In table 1 and table 2 we see a comparison of the two studies and their deblurring result scores for our five-image dataset. The correlation of the scores of two studies across no-reference metric and PSNR are positive and around 0.56 and 0.66, respectively. However, the correlation of the two metrics across studies are negative for Sun \etal (2015) (around -0.13), and positive for Whyte \etal(2012) (around 0.53). This is an interesting result and may be a sign that PSNR and no-reference metric are not behaving in the same way. We think that the PSNR metric might behave the opposite way because it is not meant to look at the same artifacts with the more deblurring-specific metric. 
 
 
 
@@ -318,7 +332,7 @@ We measured the results of the experiments with two metrics. As we discussed ear
 
 
 \section{Conclusions}
-In this study, we analyzed and evaluated two of the deblurring studies in the current literature. We evaluated the results using a recently developed metric that was designed to measure motion deblurring specifically, along with more traditional PSNR. The results show that neither of the deblurring techniques is the panacea of the blind motion deblurring problem. Both techniques are good for certain types of blurry pictures. Whyte \etal (2012) is no good for artifacts that arise after deblurring. Sun \etal (2015) cannot handle the problems with more complex motion types. Another interesting observation is that although visually more pleasing, some of the resulting images got low no-reference metric scores because of the ringing effects. Lastly there is no notable correlation between PSNR and no-reference metrics. The two metrics had a negative correlation for one metric and positive correlation across the two studies' results.
+In this study, we analyzed and evaluated two of the deblurring studies in the current literature. We evaluated the results using a recently developed metric that was designed to measure motion deblurring specifically, along with more traditional PSNR. The results show that neither of the deblurring techniques is the panacea of the blind motion deblurring problem. Both techniques are good for certain types of blurry pictures. Whyte \etal (2012) is no good for artifacts that arise after deblurring. Sun \etal (2015) cannot handle the problems with more complex motion types. Another interesting observation is that although visually more pleasing, some of the resulting images got low no-reference metric scores because of the ringing effects. Lastly there is no notable correlation between PSNR and no-reference metrics. The two metrics had a negative correlation for one metric and positive correlation across the two studies' results. As a future work, parameters of the Whyte \etal (2012) can be changed and the algorithms can be evaluated more thoroughly. 
 
 
 
