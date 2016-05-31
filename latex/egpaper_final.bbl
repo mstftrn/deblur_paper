@@ -1,36 +1,27 @@
 \begin{thebibliography}{10}\itemsep=-1pt
 
-\bibitem{Alpher02}
-A.~Alpher.
-\newblock Frobnication.
-\newblock {\em Journal of Foo}, 12(1):234--778, 2002.
-
-\bibitem{Alpher03}
-A.~Alpher and J.~P.~N. Fotheringham-Smythe.
-\newblock Frobnication revisited.
-\newblock {\em Journal of Foo}, 13(1):234--778, 2003.
-
-\bibitem{Alpher04}
-A.~Alpher, J.~P.~N. Fotheringham-Smythe, and G.~Gamow.
-\newblock Can a machine frobnicate?
-\newblock {\em Journal of Foo}, 14(1):234--778, 2004.
-
-\bibitem{Authors14}
-Authors.
-\newblock The frobnicatable foo filter, 2014.
-\newblock Face and Gesture submission ID 324. Supplied as additional material
-  {\tt fg324.pdf}.
-
-\bibitem{Authors14b}
-Authors.
-\newblock Frobnication tutorial, 2014.
-\newblock Supplied as additional material {\tt tr.pdf}.
+\bibitem{cho2009fast}
+S.~Cho and S.~Lee.
+\newblock Fast motion deblurring.
+\newblock In {\em ACM Transactions on Graphics (TOG)}, volume~28, page 145.
+  ACM, 2009.
 
 \bibitem{cho2007removing}
 S.~Cho, Y.~Matsushita, and S.~Lee.
 \newblock Removing non-uniform motion blur from images.
 \newblock In {\em Computer Vision, 2007. ICCV 2007. IEEE 11th International
   Conference on}, pages 1--8. IEEE, 2007.
+
+\bibitem{gupta2010single}
+A.~Gupta, N.~Joshi, C.~L. Zitnick, M.~Cohen, and B.~Curless.
+\newblock Single image deblurring using motion density functions.
+\newblock In {\em Computer Vision--ECCV 2010}, pages 171--184. Springer, 2010.
+
+\bibitem{joshi2010image}
+N.~Joshi, S.~B. Kang, C.~L. Zitnick, and R.~Szeliski.
+\newblock Image deblurring using inertial measurement sensors.
+\newblock In {\em ACM Transactions on Graphics (TOG)}, volume~29, page~30. ACM,
+  2010.
 
 \bibitem{levin2006blind}
 A.~Levin.
@@ -56,6 +47,13 @@ J.~Sun, W.~Cao, Z.~Xu, and J.~Ponce.
   removal.
 \newblock In {\em Computer Vision and Pattern Recognition (CVPR), 2015 IEEE
   Conference on}, pages 769--777. IEEE, 2015.
+
+\bibitem{tai2010correction}
+Y.-W. Tai, H.~Du, M.~S. Brown, and S.~Lin.
+\newblock Correction of spatially varying image and video motion blur using a
+  hybrid camera.
+\newblock {\em Pattern Analysis and Machine Intelligence, IEEE Transactions
+  on}, 32(6):1012--1028, 2010.
 
 \bibitem{whyte2012non}
 O.~Whyte, J.~Sivic, A.~Zisserman, and J.~Ponce.
